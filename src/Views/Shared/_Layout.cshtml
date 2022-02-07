@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Print-A-Wordle</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("Print-A-Wordle", "Index", "Wordle", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://twitter.com/TGAW" target="_blank" class="fa fa-twitter"></a></li>
+                    <li><a href="https://youtube.com/TGAW3D" target="_blank" class="fa fa-youtube"></a></li>
+                    <li><a href="https://instagram.com/TGAW3D" class="fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/TGAW3D" target="_blank" class="fa fa-facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img src="@Url.Content("~/Content/Images/by-nc.png")" alt="CC License" /></a><br/>
+            <em>You can safely consider this item a "Beta Application".  It was written in C# and MVC in conjunction with <a href="https://openscad.org/" target="_blank">OpenSCAD</a>.  Errors are logged so improvements can be made.  Please treat models from this page as Creative Commons Non Commercial Use</em></br>
+            <p>
+                <br /><strong>Change Log</strong></br>
+                20220205 - Add support for results that paste in as the text "Green square" and "Yellow square" instead of the actual squares.</br>
+                20220205 - Added support for the following characters - Carré jaune, Carré vert, Cuadrado amarillo, Cuadrado verde</br>
+                20220205 - Made Wordle Result field required and checked to make sure the data appears to be from Wordle. :)</br>
+
+
+            </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

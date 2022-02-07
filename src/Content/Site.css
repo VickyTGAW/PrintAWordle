@@ -1,0 +1,106 @@
+﻿@import url('Site.css');
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+.nav {
+    color: #FFFFFF;
+}
+
+.navbar-inverse {
+    background: #0CB79B;
+    color: #FFFFFF;
+}
+    .navbar-inverse .navbar-brand {
+        color: #ffffff;
+    }
+
+        .navbar-inverse .navbar-brand:hover,
+        .navbar-inverse .navbar-brand:focus {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+    }
+
+        .navbar-inverse .navbar-nav > li > a:hover,
+        .navbar-inverse .navbar-nav > li > a:focus {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #0CB79B;
+    border-color: #0CB79B;
+    padding: 6px 6px;
+    font-size: 12px;
+}
+
+.modal-header {
+    color: #FFFFFF;
+    background-color: #0CB79B;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 2px;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #0CB79B;
+    color: white;
+}
+
+.fa-twitter {
+    background: #0CB79B;
+    color: white;
+}
+
+.fa-youtube {
+    background: #0CB79B;
+    color: white;
+}
+
+.fa-instagram {
+    background: #0CB79B;
+    color: white;
+}
+
+th {
+    white-space: nowrap;
+}
+td {
+    padding: 5px;
+}
+
+
