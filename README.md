@@ -9,3 +9,5 @@ The web.config file for the Web App defines a few key paths:
 - CodeDirectory - This is the path of where the OpenSCAD project will be found. In this code structure, it is in the Content\OpenSCADCode directory.
 - ModelDirectory - OpenSCAD will output STL files.  This is the directory of where those STL files will be saved.
 - LogFile - The path and name of a text file of where errors will be logged.
+
+A video tour of the web application, the OpenSCAD 3D Model, and the code can be found at https://youtu.be/3mnRKlgQ7NA
